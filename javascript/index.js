@@ -96,12 +96,12 @@ function sort(id) {
             break;
         case "insertion": Insertion_sort();
             break;
-        case "quick": Quick_sort();
-            break;
-        case "merge": Merge_sort();
-            break;
-        case "heap": Heap_sort();
-            break;
+        // case "quick": Quick_sort();
+        //     break;
+        // case "merge": Merge_sort();
+        //     break;
+        // case "heap": Heap_sort();
+        //     break;
 
     }
 }
