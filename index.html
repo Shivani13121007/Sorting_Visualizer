@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting_visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="left">
+                <h3>size of an array</h3>
+                <input type="range" id="range_input" min=20 max=150>
+                <h3>speed of an algo</h3>
+                <input type="range" min=1 max=5 id="speed" step=1 value=4>
+                <button class="btn" id="random_arr_button">generate random array</button>
+            </div>
+            <div id="middle">
+                <input id="user_arr" class="hidden">
+                <button class="btn1" id="user_generate">Want to enter your own array?</button>
+                <!-- <p id="given_arr"></p> -->
+            </div>
+            <div id="right">
+                <h1>Sorting visualizer</h1>
+                <button onclick="sort(id)" id="bubble">bubble</button>
+                <button onclick="sort(id)" id="selection">selection</button>
+                <button onclick="sort(id)" id="insertion">insertion</button>
+                <button onclick="sort(id)" id="quick">quick</button>
+                <button onclick="sort(id)" id="merge">merge</button>
+                <button onclick="sort(id)" id="heap">heap</button>
+            </div>
+        </nav>
+
+        <section>
+            <div id="left1"></div>
+            <div id="arr_container" class="arr_container"></div>
+            <div id="right1"></div>
+
+        </section>
+    </header>
+
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/visualization.js"></script>
+
+    <script src="./javascript/Bubble_sort.js"></script>
+    <script src="./javascript/Selection_sort.js"></script>
+    <script src="./javascript/Insertion_sort.js"></script>
+
+</body>
+
+</html>
